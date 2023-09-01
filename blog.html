@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PH-Tube</title>
+    <!-- Tailwind & daisy Cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .inter-font {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body
+    class="inter-font max-w-screen-2xl mx-auto px-1 md:px-4 lg:px-8 py-2 my-6"
+  >
+    <header></header>
+    <main>
+      <section>
+        <h1 class="text-4xl font-medium p-4">
+          1. Discuss the scope of var, let, and const
+        </h1>
+        <p class="px-4">
+          <span class="text-2xl font-medium">Ans : </span>var, let, and const
+          are three different variable declaration keywords in JavaScript, each
+          with its own scope and behavior.They were introduced to manage
+          variable declarations and scoping in a more structured way.
+          Let's discuss the scope of each of these keywords: <br />
+          <br />
+          <span class="underline font-semibold">1. var Scope:</span>
+          Variables declared with var are function-scoped or globally scoped,
+          depending on whether they are declared inside a function or in the
+          global scope. If a variable is declared using var within a function,
+          it is accessible within that function and any nested functions.
+          However, variables declared with var outside of any function block are
+          globally scoped and accessible throughout the entire JavaScript
+          program. var variables are subject to hoisting, which means they are
+          moved to the top of their scope during compilation. This can lead to
+          unexpected behavior if not understood properly.
+          <br />
+          <br />
+          <span class="underline font-semibold">2. let Scope:</span> Variables
+          declared with let are block-scoped, meaning they are limited in scope
+          to the block, statement, or expression where they are defined. Block
+          scope includes loops, conditionals, and any other block-like
+          structure. Variables declared with let are not hoisted to the top of
+          their scope, which can prevent some of the unexpected
+          <br />
+          <br />
+          <span class="underline font-semibold">3. const Scope:</span> Variables
+          declared with const are also block-scoped, just like let. However,
+          const variables cannot be reassigned after they are assigned a value.
+          The value they hold is immutable, but it's important to note that for
+          complex data types like objects and arrays, the values they point to
+          can still be modified. Like let, const variables are not hoisted and
+          exist only within the block where they are defined. behavior
+          associated with var.
+        </p>
+        <h1 class="text-4xl font-medium p-4">
+          2. Tell us the use cases of null and undefined
+        </h1>
+        <p class="px-4">
+          <span class="text-2xl font-medium">Ans : </span>In JavaScript, both
+          null and undefined represent the absence of a value, but they are used
+          in slightly different contexts. Let's explore the use cases of each:
+          <br />
+          <br />
+          <span class="underline font-semibold">1. null:</span>
+          null is a value that represents the intentional absence of any object
+          value or a deliberate assignment of "no value." It is often used to
+          explicitly indicate that a variable should hold no value or that a
+          value is missing. It can be assigned to variables to indicate that
+          they have no valid object or value assigned to them.
+          <br />
+          <br />
+          <span class="underline font-semibold">2. undefined:</span>
+
+          undefined indicates that a variable has been declared but has not been
+          assigned any value. It is the default value for uninitialized
+          variables. When a variable is declared but not assigned a value, its
+          value is automatically set to undefined. Functions that do not
+          explicitly return a value also return undefined.
+          <br />
+          <br />
+          It's important to note that while both null and undefined can indicate the absence of a value, they are not interchangeable in all situations. JavaScript treats them as distinct values, and their use cases have subtle differences. 
+        </p>
+        <h1 class="text-4xl font-medium p-4">
+          3. What do you mean by REST API?
+        </h1>
+        <p class="px-4">
+            <span class="text-2xl font-medium">Ans : </span> A REST API, or Representational State Transfer Application Programming Interface, is a way for software applications to communicate over the internet. It follows a set of rules that make interactions between clients (like apps or websites) and servers (where data is stored) consistent and efficient. REST APIs use standard HTTP methods like GET, POST, PUT, and DELETE to perform actions on resources (data entities) identified by unique URLs. This approach allows different software systems to exchange data in a structured and scalable manner.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
