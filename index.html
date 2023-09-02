@@ -39,9 +39,9 @@
             </div>
           </div>
           <div class="navbar-center">
-            <a
-              class="btn bg-[#25252533] font-medium text-lg normal-case text-xl"
-              >Sort by view</a
+            <button id="sort-by-views-button"
+              class="btn bg-[#25252533] font-medium text-lg normal-case "
+              >Sort by view</button
             >
           </div>
           <div class="navbar-end">
@@ -69,10 +69,13 @@
         </div>
       </section>
     </header>
-    <main >
+    <main>
       <!-- card  -->
       <section>
-        <div id="card-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
+        <div
+          id="card-container"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-6"
+        >
           <!-- card 1 -->
           <!-- <div class="card  card-compact bg-base-100 shadow-xl">
             <div class="rounded-2xl">
@@ -110,6 +113,9 @@
           </div> -->
         </div>
       </section>
+      <div id="drawingError" class="flex flex-col justify-center items-center ">
+
+      </div>
     </main>
     <!-- js file  -->
     <script src="./JS/index.js"></script>
