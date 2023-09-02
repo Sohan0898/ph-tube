@@ -6,14 +6,13 @@ const tubeCategory = async () => {
   const tabContainer = document.getElementById("tab-container");
   data.data.forEach((category) => {
     const div = document.createElement("div");
-   
+
     div.innerHTML = `
         <a onclick="tubeLoad('${category.category_id}')" class="tab bg-[#25252533] rounded ">${category.category}</a>
         `;
     tabContainer.appendChild(div);
   });
 };
-
 
 const tubeLoad = async (categoryId) => {
   const res = await fetch(
@@ -23,9 +22,7 @@ const tubeLoad = async (categoryId) => {
   const cardContainer = document.getElementById("card-container");
   const drawContainer = document.getElementById("drawingError");
   cardContainer.innerHTML = "";
-  drawContainer.innerHTML = ""; 
-
-
+  drawContainer.innerHTML = "";
 
   if (data.data.length > 0) {
     data.data.forEach((tube) => {
@@ -71,7 +68,7 @@ const tubeLoad = async (categoryId) => {
     });
   } else {
     const errorDiv = document.createElement("div");
-    
+
     errorDiv.innerHTML = `
        
     
@@ -82,7 +79,6 @@ const tubeLoad = async (categoryId) => {
     drawContainer.appendChild(errorDiv);
   }
 };
-
 
 function showPostedDate(postedDate) {
   const postedTime = parseInt(postedDate);
